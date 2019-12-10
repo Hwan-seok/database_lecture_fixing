@@ -16,8 +16,8 @@ for (let i = 0; i < 5000; i++) {
     randInsert = `insert into student (id,password,name,major,sex,age,email) values("${randId(
         getRandomInt(5, 10)
     )}","${randId(getRandomInt(50, 60))}","${randomName()}","${
-        majors[getRandomInt(73)]
-    }","${sex[getRandomInt(0, 1)]}","${getRandomInt(23, 30)}","${randId(
+        majors[getRandomInt(0, 73)]
+    }","${sex[getRandomInt(0, 2)]}","${getRandomInt(23, 30)}","${randId(
         getRandomInt(7, 20)
     )}@${email[getRandomInt(0, 4)]}")`;
     db.query(randInsert, (err, row, result) => {

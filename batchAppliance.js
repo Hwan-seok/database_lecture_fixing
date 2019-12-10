@@ -43,7 +43,7 @@ for (let i = 0; i < 5000; i++) {
         1,
         5000
     )},${getRandomInt(1, 5000)},"${
-        hiredStatus[getRandomInt(0, 1)]
+        hiredStatus[getRandomInt(0, 2)]
     }","${newDate.toMysqlFormat()}")`;
     db.query(randInsert, (err, row, result) => {
         console.log(err);
